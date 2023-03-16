@@ -1,0 +1,3 @@
+C:/Users/jeysa nahara/Documents/3er semestre/Progr. O/GIT/Ejercicio-Huespedes-Sara-Jeysa/cmake-build-debug/CMakeFiles/Ejercicio_Huespedes_Sara_Jeysa.dir
+C:/Users/jeysa nahara/Documents/3er semestre/Progr. O/GIT/Ejercicio-Huespedes-Sara-Jeysa/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jeysa nahara/Documents/3er semestre/Progr. O/GIT/Ejercicio-Huespedes-Sara-Jeysa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
