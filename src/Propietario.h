@@ -1,0 +1,14 @@
+//
+// Created by jeysa nahara on 17/03/2023.
+//
+
+#ifndef EJERCICIO_HUESPEDES_SARA_JEYSA_PROPIETARIO_H
+#define EJERCICIO_HUESPEDES_SARA_JEYSA_PROPIETARIO_H
+
+
+class Propietario {
+
+};
+
+
+#endif //EJERCICIO_HUESPEDES_SARA_JEYSA_PROPIETARIO_H

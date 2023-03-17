@@ -11,4 +11,4 @@ add_subdirectory(test)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Ejercicio_Huespedes_Sara_Jeysa main.cpp)
+add_executable(Ejercicio_Huespedes_Sara_Jeysa main.cpp src/Propietario.cpp src/Propietario.h src/Huesped.cpp src/Huesped.h src/Hogar.cpp src/Hogar.h src/Evaluacion.cpp src/Evaluacion.h src/Reserva.cpp src/Reserva.h)
