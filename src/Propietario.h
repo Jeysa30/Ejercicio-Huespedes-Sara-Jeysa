@@ -1,6 +1,4 @@
-//
-// Created by jeysa nahara on 17/03/2023.
-//
+
 
 #ifndef EJERCICIO_HUESPEDES_SARA_JEYSA_PROPIETARIO_H
 #define EJERCICIO_HUESPEDES_SARA_JEYSA_PROPIETARIO_H
@@ -20,13 +18,15 @@ private:
     bool noDisponible;
 public:
 
+    Propietario() = default;
+
     string getNombre();
     void setNombre(string nombre);
 
-    string &getGenero();
+    string getGenero();
     void setGenero(string genero);
 
-    string &getNacimiento();
+    string getNacimiento();
     void setNacimiento(string nacimiento);
 
     float getPuntaje();

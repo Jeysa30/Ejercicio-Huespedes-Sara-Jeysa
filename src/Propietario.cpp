@@ -1,6 +1,3 @@
-//
-// Created by jeysa nahara on 17/03/2023.
-//
 
 #include "Propietario.h"
 
@@ -48,7 +45,7 @@ int Propietario::getId(){
 }
 
 void Propietario::setId(int id) {
-    ID = id;
+    Propietario::ID = id;
 }
 
 

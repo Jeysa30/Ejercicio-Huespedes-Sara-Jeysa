@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\jeysa nahara\Documents\3er semestre\Progr. O\GIT\Ejercicio-Huespedes-Sara-Jeysa" -B "C:\Users\jeysa nahara\Documents\3er semestre\Progr. O\GIT\Ejercicio-Huespedes-Sara-Jeysa\cmake-build-debug"
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/jeysa nahara/Documents/3er semestre/Progr. O/GIT/Ejercicio-Huespedes-Sara-Jeysa/cmake-build-debug
+Cannot generate into D:\3\GIT\Ejercicio-Huespedes-Sara-Jeysa\cmake-build-debug
+It is already used for project C:\Users\jeysa nahara\Documents\3er semestre\Progr. O\GIT\Ejercicio-Huespedes-Sara-Jeysa
+
+Please either delete it manually or select another generation directory

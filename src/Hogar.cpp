@@ -1,5 +1,34 @@
-//
-// Created by jeysa nahara on 17/03/2023.
-//
 
 #include "Hogar.h"
+
+string Hogar::getDireccion(){
+    return direccion;
+}
+
+void Hogar::setDireccion(string direccion) {
+    Hogar::direccion = direccion;
+}
+
+string Hogar::getDescripcion(){
+    return descripcion;
+}
+
+void Hogar::setDescripcion(int descripcion){
+    Hogar::descripcion = descripcion;
+}
+
+bool Hogar::isBebes(){
+    return bebes;
+}
+
+void Hogar::setBebes(bool bebes) {
+     Hogar::bebes = bebes;
+}
+
+int Hogar::getCamas(){
+    return camas;
+}
+
+void Hogar::setCamas(int camas) {
+    Hogar::camas = camas;
+}
