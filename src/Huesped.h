@@ -18,7 +18,9 @@ private:
     int IdH;
 
 public:
-    Huesped() = default;
+    Huesped();
+
+    Huesped(int IdH, float puntajeH, string nombreH, string generoH, string nacimientoH, string clinicaH, string lugarH);
 
     string getNombreH();
     void setNombreH(string nombreH);

@@ -29,16 +29,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5a4007e6-8d3e-4dd8-8e02-5602ea3baa91" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Evaluacion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evaluacion.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Evaluacion.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evaluacion.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hogar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hogar.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Huesped.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huesped.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Huesped.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huesped.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Propietario.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Propietario.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Propietario.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Propietario.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reserva.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reserva.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +145,7 @@
       <workItem from="1679080346916" duration="9223000" />
       <workItem from="1679144452777" duration="25000" />
       <workItem from="1679144483110" duration="5261000" />
-      <workItem from="1679240538119" duration="3650000" />
+      <workItem from="1679240538119" duration="7810000" />
     </task>
     <servers />
   </component>
