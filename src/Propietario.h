@@ -1,10 +1,9 @@
-
-
 #ifndef EJERCICIO_HUESPEDES_SARA_JEYSA_PROPIETARIO_H
 #define EJERCICIO_HUESPEDES_SARA_JEYSA_PROPIETARIO_H
 
 #include <string>
 #include <iostream>
+#include "Hogar.h"
 
 using namespace std;
 
@@ -16,6 +15,8 @@ private:
     float puntaje;
     int ID;
     bool noDisponible;
+    Hogar* pHogar;
+
 public:
 
     Propietario() = default;
@@ -37,6 +38,11 @@ public:
 
     bool isNoDisponible();
     void setNoDisponible(bool noDisponible);
+
+    void SetHogar(Hogar* pHogar);
+    Hogar* GetHogar();
+
+    void numPuntajeP(int num);
 };
 
 

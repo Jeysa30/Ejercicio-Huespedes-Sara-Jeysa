@@ -41,6 +41,7 @@ public:
     int getIdH();
     void setIdH(int IdH);
 
+    void numPuntajeH(int num);
 };
 
 

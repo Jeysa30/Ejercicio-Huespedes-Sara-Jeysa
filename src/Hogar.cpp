@@ -13,7 +13,7 @@ string Hogar::getDescripcion(){
     return descripcion;
 }
 
-void Hogar::setDescripcion(int descripcion){
+void Hogar::setDescripcion(string descripcion){
     Hogar::descripcion = descripcion;
 }
 

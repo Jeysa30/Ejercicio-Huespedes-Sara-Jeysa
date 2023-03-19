@@ -26,7 +26,7 @@ void Huesped::setNacimientoH(string nacimientoH) {
 }
 
 string Huesped::getClinicaH(){
-    return clinica;
+    return clinicaH;
 }
 
 void Huesped::setClinicaH(string clinicaH) {
@@ -53,6 +53,17 @@ int Huesped::getIdH(){
     return IdH;
 }
 
-void Huesped::setId(int idH) {
+void Huesped::setIdH(int idH) {
     IdH = idH;
+}
+
+void Huesped::numPuntajeH(int num){
+
+    if(this->puntajeH == 0){
+        this->puntajeH = num;
+    }
+
+    else{
+        this->puntajeH = (this->puntajeH + num)/2;
+    }
 }

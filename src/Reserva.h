@@ -14,8 +14,9 @@ class Reserva {
 private:
     string fechaInicio;
     string fechaFin;
-    Propietario* = pPropietario;
-    Huesped* = pHuesped;
+    Propietario* pPropietario;
+    Huesped* pHuesped;
+
 public:
     Reserva() = default;
 
