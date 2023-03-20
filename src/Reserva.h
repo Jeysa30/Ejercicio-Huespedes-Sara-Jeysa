@@ -1,5 +1,3 @@
-
-
 #ifndef EJERCICIO_HUESPEDES_SARA_JEYSA_RESERVA_H
 #define EJERCICIO_HUESPEDES_SARA_JEYSA_RESERVA_H
 
@@ -7,6 +5,7 @@
 #include <iostream>
 #include "Propietario.h"
 #include "Huesped.h"
+#include "Sistema.h"
 
 using namespace std;
 

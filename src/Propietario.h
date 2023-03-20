@@ -4,6 +4,8 @@
 #include <string>
 #include <iostream>
 #include "Hogar.h"
+#include "Sistema.h"
+#include "Reserva.h"
 
 using namespace std;
 
@@ -14,12 +16,13 @@ private:
     string nacimiento;
     float puntaje;
     int ID;
-    bool noDisponible;
+    bool disponibilidad;
     Hogar* pHogar;
 
 public:
-
     Propietario() = default;
+
+    Propietario(int ID, float puntaje, string nombre, string genero, string nacimiento, bool disponibilidad);
 
     string getNombre();
     void setNombre(string nombre);
@@ -36,13 +39,15 @@ public:
     int getId();
     void setId(int id);
 
-    bool isNoDisponible();
-    void setNoDisponible(bool noDisponible);
+    bool isDisponibilidad();
+    void setDisponibilidad(bool disponibilidad);
 
     void SetHogar(Hogar* pHogar);
     Hogar* GetHogar();
 
     void numPuntajeP(int num);
+
+    void agregarCasa(int camas, bool bebes, string direccion, string descripcion);
 };
 
 

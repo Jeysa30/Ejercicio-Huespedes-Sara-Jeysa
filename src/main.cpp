@@ -8,63 +8,51 @@
 #include "Reserva.h"
 #include "Hogar.h"
 #include "Evaluacion.h"
+#include "Sistema.h"
 
 using namespace std;
 
-void registrarHuesped(unordered_map <int, Huesped*> huespedes, int id, string nombre, string genero, string nacimiento, string hospital, string lugar){
+void primeraOpcion(int id, Sistema* pSistemaApp){
 
-    Huesped* pHuespedTemp = new Huesped(id, 0 , nombre, genero, nacimiento, hospital, lugar);
-    huespedes.insert(make_pair(id, pHuespedTemp));
+    bool hospedado = false;
+    int tipoPersona = 0;
+    // 1-Huesped
+    // 0-Propietario
+
+    tipoPersona = pSistemaApp->buscaPersona(id);
+
+    if(tipoPersona == 1){
+
+        hospedado = pSistemaApp->buscaReserva(id);
+
+        if(hospedado == true){
+            int op;
+            cout<< "1.Evaluar" << endl;
+            cout<< "0.Salir" << endl;
+
+            cin >> op;
+            if(op == 1){
+
+            }
+        }
+        else{
+            cout<< "Crea tu reserva" << endl;
+        }
+    }
+    else{
+        int op;
+        cout<< "1.Terminar estadia" << endl;
+        cout<< "0.Salir" << endl;
+
+        cin >> op;
+        if(op == 1){
+
+        }
+
+    }
 }
 
-void datosHuesped(unordered_map <int, Huesped*> huespedes) {
-    string nombreTemp, sexoTemp, nacimientoTemp, hospitalTemp, origenTemp;
-    int idTemp;
-    float puntajeEvaluacion;
-
-    cout << "Ingrese nombre del huesped " << endl;
-    cin.ignore();
-    getline(cin, nombreTemp, '\n');
-    cout << "Ingrese sexo del huesped " << endl;
-    cin >> sexoTemp;
-    cout << "Ingrese fecha de nacimeinto del huesped " << endl;
-    cin >> nacimientoTemp;
-    cout << "Ingrese hospital relacionado con el huesped" << endl;
-    cin.ignore();
-    getline(cin, hospitalTemp, '\n');
-    cout << "Ingrese lugar de origen del huesped " << endl;
-    cin.ignore();
-    getline(cin, origenTemp, '\n');
-    cout << "Ingrese ID del huesped " << endl;
-    cin >> idTemp;
-
-    registrarHuesped(huespedes, idTemp, nombreTemp, sexoTemp, nacimientoTemp, hospitalTemp, origenTemp);
-}
-
-void datosPropietario(unordered_map <int, Propietario*> propietarios) {
-    string nombreTemp, sexoTemp, nacimientoTemp, hospitalTemp, origenTemp;
-    int idTemp;
-    float puntajeEvaluacion;
-
-    cout << "Ingrese nombre del huesped " << endl;
-    cin.ignore();
-    getline(cin, nombreTemp, '\n');
-    cout << "Ingrese sexo del huesped " << endl;
-    cin >> sexoTemp;
-    cout << "Ingrese fecha de nacimeinto del huesped " << endl;
-    cin >> nacimientoTemp;
-    cout << "Ingrese hospital relacionado con el huesped" << endl;
-    cin.ignore();
-    getline(cin, hospitalTemp, '\n');
-    cout << "Ingrese lugar de origen del huesped " << endl;
-    cin.ignore();
-    getline(cin, origenTemp, '\n');
-    cout << "Ingrese ID del huesped " << endl;
-    cin >> idTemp;
-
-}
-
-void segundaOpcion(unordered_map <int, Huesped*> huespedes, unordered_map <int, Propietario*> propietarios){
+void segundaOpcion(Sistema* pSistemaAp){
     int op;
     cout<< "Seleccione una opcion" << endl;
     cout<< "1. Registrar como huesped" << endl;
@@ -72,10 +60,10 @@ void segundaOpcion(unordered_map <int, Huesped*> huespedes, unordered_map <int, 
 
     cin >> op;
     if(op == 1){
-        datosHuesped(huespedes);
+        pSistemaAp->datosHuesped();
     }
     else{
-        datosPropietario(propietarios);
+        pSistemaAp->datosPropietario();
     }
 }
 
@@ -85,6 +73,7 @@ void mostrarMenu() {
     unordered_map <int, Huesped*> huespedes;
     unordered_map <int, Propietario*> propietarios;
     vector <Reserva*> reservas;
+    Sistema* pSistemaAp;
 
     do
     {
@@ -107,7 +96,7 @@ void mostrarMenu() {
                 break;
 
             case 2:
-                segundaOpcion(huespedes, propietarios);
+                segundaOpcion(pSistemaAp);
                 break;
 
 

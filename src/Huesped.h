@@ -4,6 +4,8 @@
 
 #include <string>
 #include <iostream>
+#include "Sistema.h"
+#include "Reserva.h"
 
 using namespace std;
 
@@ -18,7 +20,7 @@ private:
     int IdH;
 
 public:
-    Huesped();
+    Huesped() = default;
 
     Huesped(int IdH, float puntajeH, string nombreH, string generoH, string nacimientoH, string clinicaH, string lugarH);
 
