@@ -1,6 +1,8 @@
 
 #include "Hogar.h"
 
+Hogar::Hogar(int camas, bool bebes, string direccion, string descripcion): camas(camas), bebes(bebes), direccion(direccion), descripcion(descripcion){}
+
 string Hogar::getDireccion(){
     return direccion;
 }

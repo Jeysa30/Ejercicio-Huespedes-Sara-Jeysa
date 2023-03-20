@@ -44,6 +44,8 @@ public:
     void setIdH(int IdH);
 
     void numPuntajeH(int num);
+
+    void mostrarHuesped(unordered_map <int, Huesped*> huespedes;);
 };
 
 

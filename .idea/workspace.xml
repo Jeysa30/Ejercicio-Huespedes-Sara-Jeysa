@@ -10,16 +10,7 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated>
-      <config projectName="Ejercicio_Huespedes_Sara_Jeysa" targetName="Ejercicio_Huespedes_Sara_Jeysa_test" />
-      <config projectName="Ejercicio_Huespedes_Sara_Jeysa" targetName="Ejercicio_Huespedes_Sara_Jeysa" />
-      <config projectName="Ejercicio_Huespedes_Sara_Jeysa" targetName="gmock_main" />
-      <config projectName="Ejercicio_Huespedes_Sara_Jeysa" targetName="gtest" />
-      <config projectName="Ejercicio_Huespedes_Sara_Jeysa" targetName="Ejercicio_Huespedes_Sara_Jeysa_lib" />
-      <config projectName="Ejercicio_Huespedes_Sara_Jeysa" targetName="Ejercicio_Huespedes_Sara_Jeysa_exe" />
-      <config projectName="Ejercicio_Huespedes_Sara_Jeysa" targetName="gtest_main" />
-      <config projectName="Ejercicio_Huespedes_Sara_Jeysa" targetName="gmock" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -28,10 +19,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a4007e6-8d3e-4dd8-8e02-5602ea3baa91" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Sistema.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sistema.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Huesped.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huesped.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hogar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hogar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hogar.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hogar.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Huesped.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huesped.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Propietario.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Propietario.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Propietario.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Propietario.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +65,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/jeysa nahara/Documents/3er semestre/Progr. O/GIT/3-crearobjasociacion-jeysa-sara",
+    "last_opened_file_path": "D:/3/GIT/4-contenedoresagrupacion-sara-jeysa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,62 +74,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="CMake Application.Ejercicio_Huespedes_Sara_Jeysa_exe">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ejercicio_Huespedes_Sara_Jeysa" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" TARGET_NAME="Ejercicio_Huespedes_Sara_Jeysa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" RUN_TARGET_NAME="Ejercicio_Huespedes_Sara_Jeysa">
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio_Huespedes_Sara_Jeysa_exe" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" TARGET_NAME="Ejercicio_Huespedes_Sara_Jeysa_exe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" RUN_TARGET_NAME="Ejercicio_Huespedes_Sara_Jeysa_exe">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ejercicio_Huespedes_Sara_Jeysa_lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" TARGET_NAME="Ejercicio_Huespedes_Sara_Jeysa_lib" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ejercicio_Huespedes_Sara_Jeysa_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" TARGET_NAME="Ejercicio_Huespedes_Sara_Jeysa_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" RUN_TARGET_NAME="Ejercicio_Huespedes_Sara_Jeysa_test">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" TARGET_NAME="gmock" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" TARGET_NAME="gtest" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.Ejercicio_Huespedes_Sara_Jeysa" />
-      <item itemvalue="CMake Application.gmock" />
-      <item itemvalue="CMake Application.gmock_main" />
-      <item itemvalue="CMake Application.gtest" />
-      <item itemvalue="CMake Application.gtest_main" />
-      <item itemvalue="CMake Application.Ejercicio_Huespedes_Sara_Jeysa_exe" />
-      <item itemvalue="CMake Application.Ejercicio_Huespedes_Sara_Jeysa_lib" />
-      <item itemvalue="CMake Application.Ejercicio_Huespedes_Sara_Jeysa_test" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,6 +94,7 @@
       <workItem from="1679144452777" duration="25000" />
       <workItem from="1679144483110" duration="5261000" />
       <workItem from="1679240538119" duration="7810000" />
+      <workItem from="1679261528794" duration="9233000" />
     </task>
     <servers />
   </component>

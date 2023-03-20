@@ -19,7 +19,9 @@ private:
 
 public:
 
-    Propietario() = default;
+    Propietario();
+
+    Propietario(int ID, float puntaje, string nombre, string genero, string nacimiento, bool noDisponible);
 
     string getNombre();
     void setNombre(string nombre);
@@ -43,6 +45,8 @@ public:
     Hogar* GetHogar();
 
     void numPuntajeP(int num);
+
+    void agregarCasa(int camas, bool bebes, string direccion, string descripcion);
 };
 
 

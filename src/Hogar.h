@@ -15,7 +15,9 @@ private:
     int camas;
 
 public:
-    Hogar() = default;
+    Hogar();
+
+    Hogar(int camas, bool bebes, string direccion, string descripcion);
 
     string getDireccion();
     void setDireccion(string direccion);

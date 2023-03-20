@@ -1,5 +1,7 @@
 #include "Propietario.h"
 
+Propietario::Propietario(int ID, float puntaje, string nombre, string genero, string nacimiento, bool noDisponible): ID(ID), puntaje(puntaje), nombre(nombre), genero(genero), nacimiento(nacimiento), noDisponible(noDisponible){}
+
 string Propietario::getNombre(){
     return nombre;
 }
@@ -64,4 +66,8 @@ void Propietario::numPuntajeP(int num){;
         this->puntaje = (this->puntaje + num)/2;
     }
 
+}
+
+void Propietario::agregarCasa(int camas, bool bebes, string direccion, string descripcion){
+    this->pHogar = new Hogar(camas, bebes, direccion, descripcion);
 }
