@@ -13,7 +13,9 @@
 using namespace std;
 
 void primeraOpcion(int id, Sistema* pSistemaApp){
-
+    string fechaInTemp;
+    string fechaFiTemp;
+    int id2;
     bool hospedado = false;
     int tipoPersona = 0;
     // 1-Huesped
@@ -37,6 +39,15 @@ void primeraOpcion(int id, Sistema* pSistemaApp){
         }
         else{
             cout<< "Crea tu reserva" << endl;
+
+            cout<< "Ingrese fecha inicio de la estadia" << endl;
+            cin >> fechaInTemp;
+
+            cout<< "Ingrese fecha fin de la estadia" << endl;
+            cin >> fechaFiTemp;
+
+            cout<< "Ingrese ID del propietario" << endl;
+            cin >> id2;
         }
     }
     else{

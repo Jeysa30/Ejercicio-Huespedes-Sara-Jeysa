@@ -29,6 +29,7 @@ public:
     void datosPropietario();
     int buscaPersona(int id);
     bool buscaReserva(int id);
+    void reservaVector(int IdH, int IdP, string fechaInicio, string fechaFin);
 };
 
 

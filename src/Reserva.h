@@ -5,7 +5,6 @@
 #include <iostream>
 #include "Propietario.h"
 #include "Huesped.h"
-#include "Sistema.h"
 
 using namespace std;
 
@@ -13,11 +12,20 @@ class Reserva {
 private:
     string fechaInicio;
     string fechaFin;
-    Propietario* pPropietario;
-    Huesped* pHuesped;
+    int IdH;
+    int IdP;
 
 public:
+
     Reserva() = default;
+
+    Reserva(string fechaInicio, string fechaFin, int IdH, int IdP);
+
+    int getIdH();
+    void setIdH(int idH);
+
+    int getIdP();
+    void setIdP(int idP);
 
     string getFechaInicio();
     void setFechaInicio(string fechaInicio);
@@ -25,11 +33,7 @@ public:
     string getFechaFin();
     void setFechaFin(string fechaFin);
 
-    void SetPropietario(Propietario* pPropietario);
-    Propietario* GetPropietario();
-
-    void SetHuesped(Huesped* pHuesped);
-    Huesped* GetHuesped();
+    Reserva* crearReserva(int idH);
 };
 
 

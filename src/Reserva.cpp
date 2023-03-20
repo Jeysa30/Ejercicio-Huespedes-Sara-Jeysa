@@ -1,6 +1,8 @@
 
 #include "Reserva.h"
 
+Reserva::Reserva(string fechaInicio, string fechaFin, int IdH, int IdP): IdH(IdH), IdP(IdP), fechaInicio(fechaInicio), fechaFin(fechaFin){}
+
 string Reserva::getFechaInicio(){
     return fechaInicio;
 }
@@ -17,18 +19,19 @@ void Reserva::setFechaFin(string fechaFin) {
     Reserva::fechaFin = fechaFin;
 }
 
-void Reserva::SetPropietario(Propietario* pPropietario){
-    this->pPropietario = pPropietario;
+
+int Reserva::getIdP(){
+    return IdP;
 }
 
-Propietario *Reserva::GetPropietario(){
-    return this->pPropietario;
+void Reserva::setIdP(int idP) {
+    IdP = idP;
 }
 
-void Reserva::SetHuesped(Huesped* pHuesped){
-    this->pHuesped = pHuesped;
+int Reserva::getIdH(){
+    return IdH;
 }
 
-Huesped *Reserva::GetHuesped(){
-    return this->pHuesped;
+void Reserva::setIdH(int idH) {
+    IdH = idH;
 }

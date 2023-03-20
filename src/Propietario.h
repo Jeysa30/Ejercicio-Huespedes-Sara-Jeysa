@@ -4,7 +4,6 @@
 #include <string>
 #include <iostream>
 #include "Hogar.h"
-#include "Sistema.h"
 #include "Reserva.h"
 
 using namespace std;

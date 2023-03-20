@@ -101,12 +101,19 @@ bool Sistema::buscaReserva(int id){
     bool hospedado = false;
 
     for (itVectorRe = this->reservas.begin(); itVectorRe != this->reservas.end(); ++itVectorRe){
-        if(id == (*itVectorRe)->GetHuesped()->getIdH()){
+        if(id == (*itVectorRe)->getIdH()){
             hospedado = true;
             return hospedado;
         }
     }
     return hospedado = false;
+}
+
+
+void Sistema::reservaVector(int IdH, int IdP, string fechaInicio, string fechaFin){
+    Reserva* pReserva = new Reserva(fechaInicio, fechaFin, IdH, IdP);
+
+    this->reservas.push_back(pReserva);
 }
 
 
