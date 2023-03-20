@@ -29,10 +29,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5a4007e6-8d3e-4dd8-8e02-5602ea3baa91" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Huesped.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huesped.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Huesped.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huesped.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +63,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/jeysa nahara/Documents/3er semestre/Progr. O/GIT/3-crearobjasociacion-jeysa-sara",
+    "last_opened_file_path": "C:/Users/jeysa nahara/Documents/3er semestre/Progr. O/GIT/Ejercicio-Huespedes-Sara-Jeysa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,11 +73,6 @@
   }
 }]]></component>
   <component name="RunManager" selected="CMake Application.Ejercicio_Huespedes_Sara_Jeysa_exe">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Ejercicio_Huespedes_Sara_Jeysa" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" TARGET_NAME="Ejercicio_Huespedes_Sara_Jeysa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Ejercicio_Huespedes_Sara_Jeysa" RUN_TARGET_NAME="Ejercicio_Huespedes_Sara_Jeysa">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -145,7 +136,8 @@
       <workItem from="1679080346916" duration="9223000" />
       <workItem from="1679144452777" duration="25000" />
       <workItem from="1679144483110" duration="5261000" />
-      <workItem from="1679240538119" duration="7810000" />
+      <workItem from="1679240538119" duration="11432000" />
+      <workItem from="1679272860489" duration="3000" />
     </task>
     <servers />
   </component>
