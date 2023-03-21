@@ -72,4 +72,14 @@ void Propietario::agregarCasa(int camas, bool bebes, string direccion, string de
     this->pHogar = new Hogar(camas, bebes, direccion, descripcion);
 }
 
+Reserva *Propietario::getActual(){
+    return this->actual;
+}
+
+void Propietario::setActual(Reserva *actual) {
+    Propietario::actual = actual;
+}
+
+
+
 

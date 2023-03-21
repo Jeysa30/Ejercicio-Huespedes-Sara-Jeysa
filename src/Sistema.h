@@ -6,6 +6,7 @@
 #include <iostream>
 #include <unordered_map>
 #include <vector>
+#include <algorithm>
 #include "Huesped.h"
 #include "Propietario.h"
 #include "Reserva.h"
@@ -19,7 +20,7 @@ private:
     vector<Reserva*> reservas;
 
 public:
-    Sistema();
+    Sistema() = default;
 
     void mostrarHuesped();
     void mostrarPropietarios();
@@ -27,9 +28,14 @@ public:
     void registrarPropietario(int id, string nombre, string genero, string nacimiento);
     void datosHuesped();
     void datosPropietario();
-    int buscaPersona(int id);
     bool buscaReserva(int id);
     void reservaVector(int IdH, int IdP, string fechaInicio, string fechaFin);
+    int buscarPersona(int Id);
+    Huesped* evaluarH(int id);
+    Propietario* evaluarP(int id);
+    void mReservas();
+    void liberarReserva(Reserva* liberarRe);
+    void mostrarInformacion(Reserva* pReserva);
 };
 
 

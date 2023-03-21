@@ -1,31 +1,26 @@
 #include <iostream>
 #include <string>
-#include <unordered_map>
-#include <vector>
-
-#include "Propietario.h"
-#include "Huesped.h"
-#include "Reserva.h"
-#include "Hogar.h"
-#include "Evaluacion.h"
 #include "Sistema.h"
+#include "Sistema.cpp"
 
 using namespace std;
 
-void primeraOpcion(int id, Sistema* pSistemaApp){
+void primeraOpcion(int id, Sistema* pPuntero){
     string fechaInTemp;
     string fechaFiTemp;
     int id2;
-    bool hospedado = false;
-    int tipoPersona = 0;
+    bool hospedado;
+    int tipoPersona;
+    Propietario* pPropietario;
     // 1-Huesped
     // 0-Propietario
 
-    tipoPersona = pSistemaApp->buscaPersona(id);
+
+    tipoPersona = pPuntero->buscarPersona(id);
 
     if(tipoPersona == 1){
 
-        hospedado = pSistemaApp->buscaReserva(id);
+        hospedado = pPuntero->buscaReserva(id);
 
         if(hospedado == true){
             int op;
@@ -48,14 +43,36 @@ void primeraOpcion(int id, Sistema* pSistemaApp){
 
             cout<< "Ingrese ID del propietario" << endl;
             cin >> id2;
+
+
         }
     }
     else{
-        int op;
-        cout<< "1.Terminar estadia" << endl;
-        cout<< "0.Salir" << endl;
+        int op, op2;
 
         cin >> op;
+
+        if(pPropietario->isDisponibilidad() == false){
+
+            cout<< "Reserva" << endl;
+            pPuntero->mostrarInformacion(pPropietario->getActual());
+
+            cout << "desea acabar su reserva:" << endl;
+            cout << "si" << endl;
+            cout << "no" << endl;
+            cin >> op2;
+
+            if(op2 == 1){
+                pPropietario->setDisponibilidad(false);
+                pPropietario->setActual(NULL);
+
+                pPuntero->liberarReserva(pPropietario->getActual());
+
+            }
+        }
+
+        cin >> op;
+        cout<< "0.Salir" << endl;
         if(op == 1){
 
         }
@@ -63,7 +80,7 @@ void primeraOpcion(int id, Sistema* pSistemaApp){
     }
 }
 
-void segundaOpcion(Sistema* pSistemaAp){
+void segundaOpcion(Sistema* pSistemaApp){
     int op;
     cout<< "Seleccione una opcion" << endl;
     cout<< "1. Registrar como huesped" << endl;
@@ -71,20 +88,16 @@ void segundaOpcion(Sistema* pSistemaAp){
 
     cin >> op;
     if(op == 1){
-        pSistemaAp->datosHuesped();
+        pSistemaApp->datosHuesped();
     }
     else{
-        pSistemaAp->datosPropietario();
+        pSistemaApp->datosPropietario();
     }
 }
 
-void mostrarMenu() {
+void mostrarMenu(Sistema* pSistemaApp) {
     int opc = 0;
     int id = 1;
-    unordered_map <int, Huesped*> huespedes;
-    unordered_map <int, Propietario*> propietarios;
-    vector <Reserva*> reservas;
-    Sistema* pSistemaAp;
 
     do
     {
@@ -104,12 +117,16 @@ void mostrarMenu() {
             case 1:
                 cout << "Ingresar ID persona" << endl;
                 cin >> id;
+                primeraOpcion(id,pSistemaApp);
                 break;
 
             case 2:
-                segundaOpcion(pSistemaAp);
+                segundaOpcion(pSistemaApp);
                 break;
-
+            case 3:
+                pSistemaApp->mostrarHuesped();
+                pSistemaApp->mostrarPropietarios();
+                break;
 
             default:
                 break;
@@ -118,5 +135,8 @@ void mostrarMenu() {
 }
 
 int main(){
-
+    Sistema* pSistemaApp = new Sistema();
+    mostrarMenu(pSistemaApp);
+    delete pSistemaApp;
+    return 0;
 }

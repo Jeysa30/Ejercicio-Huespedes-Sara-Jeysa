@@ -1,3 +1,4 @@
+
 #include "Sistema.h"
 
 void Sistema::mostrarHuesped() {
@@ -75,27 +76,6 @@ void Sistema::datosPropietario() {
     registrarPropietario(id, nombre, genero, nacimiento);
 }
 
-int Sistema::buscaPersona(int id){
-    unordered_map<int, Huesped*>::iterator itMapH;
-    unordered_map<int, Propietario*>::iterator itMapP;
-    int tipoPersona = 0;
-
-    for (itMapH = this->huespedes.begin(); itMapH != this->huespedes.end(); ++itMapH){
-        if(id == itMapH->first){
-            tipoPersona = 1;
-            return tipoPersona;
-        }
-    }
-
-    for (itMapP = this->propietarios.begin(); itMapP != this->propietarios.end(); ++itMapP){
-        if(id == itMapP->first){
-            tipoPersona = 0;
-            return tipoPersona;
-        }
-    }
-    return tipoPersona = 2;
-}
-
 bool Sistema::buscaReserva(int id){
     vector<Reserva*>::iterator itVectorRe;
     bool hospedado = false;
@@ -106,15 +86,108 @@ bool Sistema::buscaReserva(int id){
             return hospedado;
         }
     }
-    return hospedado = false;
+    return hospedado;
 }
 
 
+int Sistema::buscarPersona(int Id) {
+    unordered_map<int, Huesped*>::iterator itMapH;
+    unordered_map<int, Propietario*>::iterator itMapP;
+    int persona;
+
+    for(itMapH = this->huespedes.begin(); itMapH != this->huespedes.end(); ++itMapH){
+        if(Id == itMapH->first){
+            persona = 1;
+            return persona;
+        }
+    }
+
+    for(itMapP = this->propietarios.begin(); itMapP != this->propietarios.end(); ++itMapP){
+        if(Id == itMapP->first){
+            persona = 0;
+            return persona;
+        }
+    }
+
+    persona = 2;
+    return persona;
+}
+
+Huesped* Sistema::evaluarH(int id){
+    unordered_map<int, Huesped*>::iterator itMapH;
+
+    for (itMapH = this->huespedes.begin(); itMapH != this->huespedes.end(); ++itMapH){
+        Huesped* pHuesped = itMapH->second;
+        if(id == itMapH->first){
+            return pHuesped;
+        }
+    }
+}
+
+Propietario* Sistema::evaluarP(int id){
+    unordered_map<int, Propietario*>::iterator itMapH;
+
+    for (itMapH = this->propietarios.begin(); itMapH != this->propietarios.end(); ++itMapH){
+        Propietario* pPropietario = itMapH->second;
+        if(id == itMapH->first){
+            return pPropietario;
+        }
+    }
+}
+
+void Sistema::mReservas() {
+    vector<Reserva*>::iterator itVector;
+    Propietario* pPropietario;
+    Huesped* pHuesped;
+
+    cout << "Las reservas actuales son:\n";
+    for (itVector = this->reservas.begin(); itVector != this->reservas.end(); ++itVector){
+        mostrarInformacion(*itVector);
+    }
+}
+
+void Sistema::mostrarInformacion(Reserva* pReserva){
+    Propietario* pPropietario;
+    Huesped* pHuesped;
+
+    cout << "Propietario:\n";
+    pPropietario = evaluarP(pReserva->getIdP());
+    cout <<" Nombre: "<<pPropietario->getNombre() << endl;
+    cout <<" ID:"<<pPropietario->getId()<< endl;
+    cout << "Huesped:\n";
+    pHuesped = evaluarH(pReserva->getIdH());
+    cout <<" Nombre: "<<pHuesped->getNombreH()<< endl;
+    cout <<" ID:"<<pHuesped->getIdH()<< endl;
+    cout << "fechas de la reserva:\n";
+    cout <<" Inicio: "<<pReserva->getFechaInicio()<< endl;
+    cout <<" Fin:"<<pReserva->getFechaFin()<< endl;
+}
 void Sistema::reservaVector(int IdH, int IdP, string fechaInicio, string fechaFin){
-    Reserva* pReserva = new Reserva(fechaInicio, fechaFin, IdH, IdP);
+    Propietario* persona;
 
-    this->reservas.push_back(pReserva);
+    persona = this->evaluarP(IdP);
+
+    if(persona->isDisponibilidad() == false){
+        cout << "no se puede hospedar" << endl;
+    }
+    else{
+        Reserva* pReserva = new Reserva(fechaInicio, fechaFin, IdH, IdP);
+        this->reservas.push_back(pReserva);
+        persona->setDisponibilidad(true);
+        persona->setActual(pReserva);
+    }
 }
 
+void Sistema::liberarReserva(Reserva* liberarRe) {
+    vector<Reserva*>::iterator itVector;
 
+    itVector = find(this->reservas.begin(), this->reservas.end(), liberarRe);
 
+    if(itVector != this->reservas.end()){
+        this->reservas.erase(itVector);
+    }
+    else{
+        cout << "no tiene"<< endl;
+    }
+
+}

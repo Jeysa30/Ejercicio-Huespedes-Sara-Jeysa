@@ -3,8 +3,7 @@
 
 #include <string>
 #include <iostream>
-#include "Propietario.h"
-#include "Huesped.h"
+
 
 using namespace std;
 
