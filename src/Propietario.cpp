@@ -54,8 +54,6 @@ Hogar *Propietario::GetHogar() {
     return this->pHogar;
 }
 
-//METODOS//
-
 void Propietario::numPuntajeP(int num){;
 
     if(this->puntaje == 0){

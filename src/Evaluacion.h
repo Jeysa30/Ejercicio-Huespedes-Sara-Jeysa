@@ -10,20 +10,21 @@ class Evaluacion {
 private:
     string fechaEvaluacion;
     string comentario;
-    string PersonaDirigida;
-    string personaEvaluacion;
+    int PersonaDirigida;
+    int personaEvaluacion;
     int calificar;
 
 public:
 
     Evaluacion() = default;
+    Evaluacion(string fechaEvaluacion, string comentario, int PersonaDirigida, int personaEvaluacion, int calificar);
 
 
-    string getPersonaEvaluacion();
-    void setPersonaEvaluacion(string personaEvaluacion);
+    int getPersonaEvaluacion();
+    void setPersonaEvaluacion(int personaEvaluacion);
 
-    string getPersonaDirigida();
-    void setPersonaDirigida(string personaDirigida);
+    int getPersonaDirigida();
+    void setPersonaDirigida(int personaDirigida);
 
     int getCalificar();
     void setCalificar(int calificar);

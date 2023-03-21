@@ -66,7 +66,7 @@ void Sistema::datosPropietario() {
     cout << "Ingrese nombre del propietario " << endl;
     cin.ignore();
     getline(cin, nombre, '\n');
-    cout << "Ingrese sexo del propietario " << endl;
+    cout << "Ingrese genero del propietario " << endl;
     cin >> genero;
     cout << "Ingrese fecha de nacimeinto del propietario " << endl;
     cin >> nacimiento;
@@ -97,14 +97,14 @@ int Sistema::buscarPersona(int Id) {
 
     for(itMapH = this->huespedes.begin(); itMapH != this->huespedes.end(); ++itMapH){
         if(Id == itMapH->first){
-            persona = 1;
+            persona = 2;
             return persona;
         }
     }
 
     for(itMapP = this->propietarios.begin(); itMapP != this->propietarios.end(); ++itMapP){
         if(Id == itMapP->first){
-            persona = 0;
+            persona = 1;
             return persona;
         }
     }
@@ -146,6 +146,7 @@ void Sistema::mReservas() {
     }
 }
 
+
 void Sistema::mostrarInformacion(Reserva* pReserva){
     Propietario* pPropietario;
     Huesped* pHuesped;
@@ -162,6 +163,8 @@ void Sistema::mostrarInformacion(Reserva* pReserva){
     cout <<" Inicio: "<<pReserva->getFechaInicio()<< endl;
     cout <<" Fin:"<<pReserva->getFechaFin()<< endl;
 }
+
+
 void Sistema::reservaVector(int IdH, int IdP, string fechaInicio, string fechaFin){
     Propietario* persona;
 
@@ -186,8 +189,44 @@ void Sistema::liberarReserva(Reserva* liberarRe) {
     if(itVector != this->reservas.end()){
         this->reservas.erase(itVector);
     }
+
     else{
-        cout << "no tiene"<< endl;
+        cout << "No hay ninguna reserva"<< endl;
     }
 
+}
+
+int Sistema::recogerIdH(int IdP){
+    vector<Reserva*>::iterator itVectorRe;
+
+    for (itVectorRe = this->reservas.begin(); itVectorRe != this->reservas.end(); ++itVectorRe){
+        Reserva* reservaTemp = *itVectorRe;
+        if(IdP == reservaTemp->getIdP()){
+            return reservaTemp->getIdH();
+        }
+    }
+
+}
+
+void Sistema::evaluarPr(int IdP){
+
+    int calificacion;
+    string fecha, comentario;
+    int IdH = this->recogerIdH(IdP);
+    Huesped* huespedTemp = this->evaluarH(IdH);
+
+
+    cout << "Ingrese la fecha para terminar la estadia " << endl;
+    cin >> fecha;
+    cout << "Ingrese la calificacion" << endl;
+    cin >> calificacion;
+    cout << "Ingrese el comentario" << endl;
+    cin.ignore();
+    getline(cin, comentario, '\n');
+
+
+    huespedTemp->numPuntajeH(calificacion);
+
+    Evaluacion* evaluacionTemp = new Evaluacion(fecha, comentario, IdP, IdH, calificacion);
+    this->evaluacion.push_back(evaluacionTemp);
 }

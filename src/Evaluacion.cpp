@@ -1,5 +1,7 @@
 #include "Evaluacion.h"
 
+Evaluacion::Evaluacion(string fechaEvaluacion, string comentario, int PersonaDirigida, int personaEvaluacion, int calificar): fechaEvaluacion(fechaEvaluacion), comentario(comentario), PersonaDirigida(PersonaDirigida), personaEvaluacion(personaEvaluacion), calificar(calificar){}
+
 string Evaluacion::getFechaEvaluacion(){
     return fechaEvaluacion;
 }
@@ -24,18 +26,19 @@ void Evaluacion::setCalificar(int calificar) {
     Evaluacion::calificar = calificar;
 }
 
-string Evaluacion::getPersonaDirigida(){
+int Evaluacion::getPersonaDirigida(){
     return PersonaDirigida;
 }
 
-void Evaluacion::setPersonaDirigida(string personaDirigida) {
+void Evaluacion::setPersonaDirigida(int personaDirigida) {
     PersonaDirigida = personaDirigida;
 }
 
- string Evaluacion::getPersonaEvaluacion(){
+int Evaluacion::getPersonaEvaluacion(){
     return personaEvaluacion;
 }
 
-void Evaluacion::setPersonaEvaluacion(string personaEvaluacion) {
+void Evaluacion::setPersonaEvaluacion(int personaEvaluacion) {
     Evaluacion::personaEvaluacion = personaEvaluacion;
 }
+

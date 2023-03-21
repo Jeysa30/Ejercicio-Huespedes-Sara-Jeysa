@@ -10,6 +10,7 @@
 #include "Huesped.h"
 #include "Propietario.h"
 #include "Reserva.h"
+#include "Evaluacion.h"
 
 using namespace std;
 
@@ -18,6 +19,7 @@ private:
     unordered_map <int, Huesped*> huespedes;
     unordered_map <int, Propietario*> propietarios;
     vector<Reserva*> reservas;
+    vector<Evaluacion*> evaluacion;
 
 public:
     Sistema() = default;
@@ -36,6 +38,8 @@ public:
     void mReservas();
     void liberarReserva(Reserva* liberarRe);
     void mostrarInformacion(Reserva* pReserva);
+    int recogerIdH(int IdP);
+    void evaluarPr(int idP);
 };
 
 
